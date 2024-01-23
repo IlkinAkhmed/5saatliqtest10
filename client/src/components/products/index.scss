@@ -1,0 +1,126 @@
+.products {
+  width: 100%;
+  min-height: 90vh;
+  padding: 50px 0;
+  .prod-head {
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0;
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      color: gray;
+    }
+  }
+  .prod-wrapper {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    gap: 15px;
+    flex-wrap: wrap;
+    .card {
+      width: 31%;
+      &:hover .add {
+        transform: translateY(-50px) !important;
+      }
+      &:hover .fa-heart {
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+      .img {
+        height: 90%;
+        border-bottom: 3px solid red;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        .fa-heart {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          z-index: 5;
+          color: black;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s;
+          font-size: 1.7em;
+          &:hover {
+            color: red;
+          }
+        }
+        .add {
+          width: 100%;
+          padding: 20px 0;
+          text-align: center;
+          background-color: red;
+          color: white;
+          font-weight: bold;
+          position: absolute;
+          transition: all 0.3s;
+          cursor: pointer;
+          &:hover {
+            color: red;
+            background-color: whi;
+          }
+          // transform: translateY(-50px);
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .texts {
+        height: 10%;
+        text-align: center;
+        line-height: 2;
+        h2 {
+          cursor: pointer;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 577px) {
+  .products {
+    .prod-head {
+      width: 100%;
+    }
+    .prod-wrapper {
+      width: 90%;
+      justify-content: center;
+      .card{
+        width: 95%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .products {
+    .prod-head {
+      width: 50%;
+    }
+    .prod-wrapper {
+      width: 90%;
+      .card{
+        width: 48%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .products {
+    .prod-head {
+      width: 50%;
+    }
+    .prod-wrapper {
+      width: 90%;
+    }
+  }
+}

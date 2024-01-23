@@ -1,0 +1,85 @@
+.addPage {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  padding: 150px 0;
+  h1 {
+    padding: 50px 0;
+  }
+  .form {
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    border: 1px solid gray;
+    .input {
+      width: 80%;
+      height: 40px;
+      border: 1px solid gray;
+      outline: none;
+      border-radius: 8px;
+    }
+    .error {
+      color: red;
+    }
+    button {
+      padding: 10px 20px;
+      border: 1px solid gray;
+      border-radius: 8px;
+      cursor: pointer;
+      &:hover {
+        color: white;
+        background-color: red;
+      }
+    }
+  }
+  .filterArea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 20px;
+    input {
+      height: 30px;
+      outline: none;
+      border: 1px solid gray;
+      border-radius: 8px;
+      width: 250px;
+    }
+    button {
+      padding: 0 20px;
+      cursor: pointer;
+      border: 1px solid gray;
+      border-radius: 8px;
+      &:hover {
+        color: white;
+        background-color: red;
+      }
+    }
+  }
+  table {
+    border: 1px solid gray;
+    border-radius: 8px;
+    width: 1200px;
+    margin: auto;
+    th,
+    td {
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      border-right: 1px solid gray;
+      img {
+        width: 50px;
+      }
+      i {
+        color: red;
+        font-size: 1.5em;
+        cursor: pointer;
+      }
+    }
+  }
+}
